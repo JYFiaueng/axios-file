@@ -1,8 +1,13 @@
 ## axios-file
+node 中在 axios 基础上实现文件的上传和下载
 
-node 中在 axios 基础上对文件的表单上传和下载进行处理
+### Installation
+```
+npm install axios-file
+```
 
-#### 上传：
+### Example
+##### 上传：
 ```
 const axiosFile = require('axios-file');
 
@@ -22,7 +27,7 @@ await axiosFile({
 });
 ```
 
-#### 下载：
+##### 下载：
 ```
 const axiosFile = require('axios-file');
 
