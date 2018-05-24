@@ -16,13 +16,9 @@ const API = axios.create();
 
 API.interceptors.request.use((config) => {
 
-  const formData = config.formData;
+  const formData = config.data;
 
   if (isObject(formData)) {
-
-    if (isObject(config.data)) {
-      formData = {...formData, ...config.data};
-    }
 
     config.transformRequest = [(data, headers) => {
       let form = new FormData();
