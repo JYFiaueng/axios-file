@@ -35,9 +35,8 @@ API.interceptors.request.use((config) => {
 
   }
 
-  const responseType = config.responseType;
-
-  if (responseType === 'stream' && isString(config.savePath)) {
+  if (isString(config.savePath)) {
+    config.responseType = 'stream';
     config.transformResponse = [async (data) => {
       await new Promise((resolve, reject) => {
         const writeStream = fs.createWriteStream(config.savePath);
