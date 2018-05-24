@@ -36,6 +36,7 @@ API.interceptors.request.use((config) => {
   }
 
   const responseType = config.responseType;
+
   if (responseType === 'stream' && isString(config.savePath)) {
     config.transformResponse = [async (data) => {
       await new Promise((resolve, reject) => {
