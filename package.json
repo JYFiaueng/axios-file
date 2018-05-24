@@ -1,0 +1,23 @@
+{
+  "name": "axios-file",
+  "version": "1.0.0",
+  "description": "axios post formdata and download file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JYFiaueng/axios-file.git"
+  },
+  "author": "jiayufeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JYFiaueng/axios-file/issues"
+  },
+  "homepage": "https://github.com/JYFiaueng/axios-file#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "form-data": "^2.3.2"
+  }
+}
