@@ -12,6 +12,7 @@ npm install axios-file
 const axiosFile = require('axios-file');
 
 // 直接将 stream 传入即可
+
 const data = {
   name: 'test',
   file: fs.createReadStream('./test.png')
@@ -33,6 +34,7 @@ const axiosFile = require('axios-file');
 
 // 下载文件并保存至指定的文件中
 // savePath 必须存在，否则将走 axios 的默认规则
+
 await axiosFile({
   url: 'http://xxx.xxx/file',
   method: 'get',
