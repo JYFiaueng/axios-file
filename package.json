@@ -1,6 +1,6 @@
 {
   "name": "axios-file",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "axios post formdata and download file",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/JYFiaueng/axios-file.git"
   },
+  "keywords": [
+    "axios",
+    "upload",
+    "download",
+    "formdata"
+  ],
   "author": "jiayufeng",
   "license": "ISC",
   "bugs": {
