@@ -1,6 +1,6 @@
 {
   "name": "axios-file",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "axios post formdata and download file",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/JYFiaueng/axios-file#readme",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.17.1",
     "form-data": "^2.3.2"
   }
 }
