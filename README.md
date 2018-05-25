@@ -3,6 +3,8 @@ node 中在 axios 基础上实现文件的上传和下载
 
 ![npm](https://img.shields.io/npm/v/axios-file.svg)
 ![npm](https://img.shields.io/npm/dm/axios-file.svg)
+![npm](https://img.shields.io/npm/l/axios-file.svg)
+
 
 [![GitHub forks](https://img.shields.io/github/forks/JYFiaueng/axios-file.svg?style=social&label=Fork)](https://github.com/JYFiaueng/axios-file/fork)
 [![GitHub stars](https://img.shields.io/github/stars/JYFiaueng/axios-file.svg?style=social&label=Star)](https://github.com/JYFiaueng/axios-file)
