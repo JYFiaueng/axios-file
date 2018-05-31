@@ -1,10 +1,10 @@
 {
   "name": "axios-file",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "axios post formdata and download file",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "formdata"
   ],
   "author": "jiayufeng",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JYFiaueng/axios-file/issues"
   },
@@ -25,5 +25,10 @@
   "dependencies": {
     "axios": "^0.17.1",
     "form-data": "^2.3.2"
+  },
+  "devDependencies": {
+    "@zhike/koa2-upload": "^1.0.0",
+    "koa": "^2.5.1",
+    "mocha": "^5.2.0"
   }
 }

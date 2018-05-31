@@ -16,16 +16,23 @@ const API = axios.create();
 
 API.interceptors.request.use((config) => {
 
-  const formData = config.data;
+  const data = config.data;
 
-  if (isObject(formData)) {
+  if (isObject(data)) {
+
+    config.maxContentLength || (config.maxContentLength = 1024 * 1024 * 100);
 
     config.transformRequest = [(data, headers) => {
       let form = new FormData();
-      for(let p in formData) {
-        form.append(p, formData[p]);
+      for (let key in data) {
+        if (data.hasOwnProperty(key)) {
+          form.append(key, data[key]);
+        }
       }
-      headers['content-type'] = form.getHeaders()['content-type'];
+      delete headers.post['Content-Type'];
+      delete headers.put['Content-Type'];
+      delete headers.patch['Content-Type'];
+      Object.assign(headers, form.getHeaders());
       return form;
     }];
 
