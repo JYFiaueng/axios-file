@@ -20,7 +20,10 @@ API.interceptors.request.use((config) => {
 
   if (isObject(data)) {
 
-    config.maxContentLength || (config.maxContentLength = 1024 * 1024 * 100);
+    // axios 里面写死了默认 -1
+    if (config.maxContentLength < 0) {
+      config.maxContentLength = 1024 * 1024 * 100;
+    }
 
     config.transformRequest = [(data, headers) => {
       let form = new FormData();
