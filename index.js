@@ -46,7 +46,7 @@ API.interceptors.request.use((config) => {
     config.transformResponse = [async (data) => {
       await new Promise((resolve, reject) => {
         const writeStream = fs.createWriteStream(config.savePath);
-        data.on('end', (err) => {
+        writeStream.on('finish', (err) => {
           if (err) reject();
           resolve();
         });
